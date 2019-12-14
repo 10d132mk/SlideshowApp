@@ -9,9 +9,12 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    var sushi2:UIImage!
+    @IBOutlet weak var sushi: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        sushi.image=sushi2
 
         // Do any additional setup after loading the view.
     }

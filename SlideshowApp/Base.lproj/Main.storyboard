@@ -116,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="fR3-r5-kIC"/>
                     </view>
                     <connections>
-                        <outlet property="sushi" destination="tLs-Iu-nQR" id="TLu-tf-fco"/>
+                        <outlet property="sushi" destination="tLs-Iu-nQR" id="Mt4-TE-Cmd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWa-CR-hkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
