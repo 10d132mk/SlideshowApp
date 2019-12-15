@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A885CE0023A4D2D700A22321 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A885CDFF23A4D2D700A22321 /* ResultViewController.swift */; };
+		A888744D23A631DA00940C53 /* sushi_temari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A888744A23A631DA00940C53 /* sushi_temari.jpg */; };
+		A888744E23A631DA00940C53 /* fugusashi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A888744B23A631DA00940C53 /* fugusashi.jpg */; };
+		A888744F23A631DA00940C53 /* oke_nigiri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A888744C23A631DA00940C53 /* oke_nigiri.jpg */; };
 		A8AB2E6523A13C3E00BD2BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB2E6423A13C3E00BD2BDE /* AppDelegate.swift */; };
 		A8AB2E6723A13C3E00BD2BDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB2E6623A13C3E00BD2BDE /* ViewController.swift */; };
 		A8AB2E6A23A13C3E00BD2BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AB2E6823A13C3E00BD2BDE /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		A885CDFF23A4D2D700A22321 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A888744A23A631DA00940C53 /* sushi_temari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sushi_temari.jpg; sourceTree = "<group>"; };
+		A888744B23A631DA00940C53 /* fugusashi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fugusashi.jpg; sourceTree = "<group>"; };
+		A888744C23A631DA00940C53 /* oke_nigiri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oke_nigiri.jpg; sourceTree = "<group>"; };
 		A8AB2E6123A13C3E00BD2BDE /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AB2E6423A13C3E00BD2BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AB2E6623A13C3E00BD2BDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +48,9 @@
 			children = (
 				A8AB2E6323A13C3E00BD2BDE /* SlideshowApp */,
 				A8AB2E6223A13C3E00BD2BDE /* Products */,
+				A888744B23A631DA00940C53 /* fugusashi.jpg */,
+				A888744C23A631DA00940C53 /* oke_nigiri.jpg */,
+				A888744A23A631DA00940C53 /* sushi_temari.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +134,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A888744D23A631DA00940C53 /* sushi_temari.jpg in Resources */,
+				A888744F23A631DA00940C53 /* oke_nigiri.jpg in Resources */,
 				A8AB2E6F23A13C4300BD2BDE /* LaunchScreen.storyboard in Resources */,
 				A8AB2E6C23A13C4300BD2BDE /* Assets.xcassets in Resources */,
+				A888744E23A631DA00940C53 /* fugusashi.jpg in Resources */,
 				A8AB2E6A23A13C3E00BD2BDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

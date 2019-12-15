@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var timer: Timer!
     let images = [UIImage(named: "fugusashi"), UIImage(named: "nigiri"), UIImage(named: "oke")]
     
+    
     override func viewDidLoad() {
         //最初から画像表示するためのコード
         sushisushi.image=images[imageIndex]
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
         }
         sushisushi.image = images[imageIndex]
     }
-
+    
     @IBAction func nextImage(_ sender: UIButton) {
         if imageIndex == 2 {
             imageIndex = 0
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var modoru: UIButton!
     @IBOutlet weak var susumu: UIButton!
-
+    
     
     
     @objc func updateTimer(_ timer: Timer) {
@@ -70,8 +71,10 @@ class ViewController: UIViewController {
         self.timer.invalidate()// タイマーを停止する
         self.timer = nil
         
+        
     }
     @IBAction func startStop(_ sender: UIButton) {
+             sender.setTitle("停止", for: .normal)
         modoru.isEnabled=false
         susumu.isEnabled=false
         //タイマーが動いてないとき
@@ -87,8 +90,10 @@ class ViewController: UIViewController {
             self.timer = nil
             modoru.isEnabled=true
             susumu.isEnabled=true
-            
+            sender.setTitle("再生", for: .normal)
+
         }
+        
     }
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
