@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     let images = [UIImage(named: "fugusashi"), UIImage(named: "nigiri"), UIImage(named: "oke")]
     
     
-    
     override func viewDidLoad() {
         //最初から画像表示するためのコード
         sushisushi.image=images[imageIndex]
@@ -29,17 +28,12 @@ class ViewController: UIViewController {
         
         if self.timer != nil {
             self.timer.invalidate()
-        } else {
-            timer = Timer.scheduledTimer(timeInterval: 2,
-                                         target: self,
-                                         selector: #selector(updateTimer),
-                                         userInfo: nil,
-                                         repeats:true)
+            self.timer = nil
+            modoru.isEnabled=true
+            susumu.isEnabled=true
+            saiseiTeishi.setTitle("再生", for:.normal)
         }
-        
-        
     }
-    
     
     @IBAction func backImage(_ sender: UIButton) {
         if imageIndex == 0 {
@@ -63,6 +57,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var modoru: UIButton!
     @IBOutlet weak var susumu: UIButton!
+    @IBOutlet weak var saiseiTeishi: UIButton!
     
     
     
@@ -73,10 +68,8 @@ class ViewController: UIViewController {
             
         } else {
             imageIndex += 1
-            
         }
         sushisushi.image = images[imageIndex]
-        
     }
     
     //↓から停止
@@ -84,9 +77,13 @@ class ViewController: UIViewController {
         self.timer.invalidate()// タイマーを停止する
         self.timer = nil
         
-        
     }
+
+    
+    
+    
     @IBAction func startStop(_ sender: UIButton) {
+        
         sender.setTitle("停止", for: .normal)
         modoru.isEnabled=false
         susumu.isEnabled=false
@@ -97,14 +94,12 @@ class ViewController: UIViewController {
                                          selector: #selector(updateTimer),
                                          userInfo: nil,
                                          repeats:true)
-            
         } else {
             self.timer.invalidate()// タイマーを停止する
             self.timer = nil
             modoru.isEnabled=true
             susumu.isEnabled=true
             sender.setTitle("再生", for: .normal)
-            
         }
         
     }

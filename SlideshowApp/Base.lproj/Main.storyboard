@@ -28,7 +28,7 @@
                                 <rect key="frame" x="282.5" y="608" width="31" height="30"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBC-eE-iIk"/>
+                                    <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qih-X4-hCJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeS-r1-ifr">
@@ -74,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="modoru" destination="uJQ-8A-7jH" id="hoj-HD-OEk"/>
+                        <outlet property="saiseiTeishi" destination="2Q7-ae-PLQ" id="fTw-Ot-zIP"/>
                         <outlet property="sushisushi" destination="TDU-lD-uoE" id="FRK-94-VkT"/>
                         <outlet property="susumu" destination="VCH-P1-A2d" id="Gjb-uu-ggz"/>
                     </connections>

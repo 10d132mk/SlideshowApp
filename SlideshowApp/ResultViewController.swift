@@ -15,6 +15,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sushi.image=sushi2
+        
 
         // Do any additional setup after loading the view.
     }
